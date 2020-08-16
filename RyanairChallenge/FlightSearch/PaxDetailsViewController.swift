@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum totalPax {
+enum TotalPax {
     static let minAdults = 1
     static let maxAdults = 6
     static let minTeen = 0
@@ -34,9 +34,9 @@ class PaxDetailsViewController: UIViewController {
     @IBOutlet weak var minusTeen: UIButton!
     @IBOutlet weak var doneButton: UIButton!
 
-    var totalAdults = totalPax.minAdults
-    var totalTeen = totalPax.minTeen
-    var totalChildren = totalPax.minChildren
+    var totalAdults = TotalPax.minAdults
+    var totalTeen = TotalPax.minTeen
+    var totalChildren = TotalPax.minChildren
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class PaxDetailsViewController: UIViewController {
 
     // MARK: - Adult Selection Actions
     @IBAction func OnAdultMinusClick(_ sender: Any) {
-        if self.totalAdults > totalPax.minAdults {
+        if self.totalAdults > TotalPax.minAdults {
             self.totalAdults -= 1
             self.numberOfAdultsValueLabel.text = String(self.totalAdults)
         }
@@ -58,7 +58,7 @@ class PaxDetailsViewController: UIViewController {
     }
 
     @IBAction func onAdultPlusClick(_ sender: Any) {
-        if self.totalAdults < (totalPax.maxAdults + 1) {
+        if self.totalAdults < (TotalPax.maxAdults + 1) {
             self.totalAdults += 1
             self.numberOfAdultsValueLabel.text = String(self.totalAdults)
         }
@@ -67,7 +67,7 @@ class PaxDetailsViewController: UIViewController {
 
     // MARK: - Teen Selection Actions
     @IBAction func onTeenMinusClick(_ sender: Any) {
-        if self.totalTeen > totalPax.minTeen {
+        if self.totalTeen > TotalPax.minTeen {
             self.totalTeen -= 1
             self.numberOfTeenValueLabel.text = String(self.totalTeen)
         }
@@ -75,7 +75,7 @@ class PaxDetailsViewController: UIViewController {
     }
 
     @IBAction func onTeenPlusClick(_ sender: Any) {
-        if self.totalTeen < totalPax.maxTeen {
+        if self.totalTeen < TotalPax.maxTeen {
             self.totalTeen += 1
             self.numberOfTeenValueLabel.text = String(self.totalTeen)
         }
@@ -84,7 +84,7 @@ class PaxDetailsViewController: UIViewController {
 
     // MARK: - Children Selection Actions
     @IBAction func onChildrenMinusClick(_ sender: Any) {
-        if self.totalChildren > totalPax.minChildren {
+        if self.totalChildren > TotalPax.minChildren {
             self.totalChildren -= 1
             self.numberOfChildrenValueLabel.text = String(self.totalChildren)
         }
@@ -92,7 +92,7 @@ class PaxDetailsViewController: UIViewController {
     }
 
     @IBAction func onChildrenPlusClick(_ sender: Any) {
-        if self.totalChildren < totalPax.maxChildren {
+        if self.totalChildren < TotalPax.maxChildren {
             self.totalChildren += 1
             self.numberOfChildrenValueLabel.text = String(self.totalChildren)
         }
@@ -113,17 +113,17 @@ class PaxDetailsViewController: UIViewController {
     }
 
     private func validateAdultNumber() {
-        minusAdult.isEnabled = totalAdults != totalPax.minAdults
-        plusAdult.isEnabled = totalAdults != totalPax.maxAdults
+        minusAdult.isEnabled = totalAdults != TotalPax.minAdults
+        plusAdult.isEnabled = totalAdults != TotalPax.maxAdults
     }
 
     private func validateTeenNumber() {
-        minusTeen.isEnabled = totalTeen != totalPax.minTeen
-        plusTeen.isEnabled = totalTeen != totalPax.maxTeen
+        minusTeen.isEnabled = totalTeen != TotalPax.minTeen
+        plusTeen.isEnabled = totalTeen != TotalPax.maxTeen
     }
 
     private func validateChildrenNumber() {
-        minusChild.isEnabled = totalChildren != totalPax.minChildren
-        plusChild.isEnabled = totalChildren != totalPax.maxChildren
+        minusChild.isEnabled = totalChildren != TotalPax.minChildren
+        plusChild.isEnabled = totalChildren != TotalPax.maxChildren
     }
 }

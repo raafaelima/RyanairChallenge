@@ -23,10 +23,10 @@ struct Trip: Codable {
         case origin
         case destination
         case dates
+    }
 
-        enum DateCodingKeys: String, CodingKey {
-            case flights
-        }
+    enum DateCodingKeys: String, CodingKey {
+        case flights
     }
 
     init (from decoder: Decoder) throws {
@@ -37,7 +37,7 @@ struct Trip: Codable {
         var datesContainer = try container.nestedUnkeyedContainer(forKey: .dates)
 
         while !datesContainer.isAtEnd {
-            let flightContainer = try datesContainer.nestedContainer(keyedBy: CodingKeys.DateCodingKeys.self)
+            let flightContainer = try datesContainer.nestedContainer(keyedBy: DateCodingKeys.self)
             self.flights = try flightContainer.decodeIfPresent([Flight].self, forKey: .flights)
         }
     }
