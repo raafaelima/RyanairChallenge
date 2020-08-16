@@ -12,7 +12,7 @@ I'm using Fastlane to automate the tests and lint executions.
 I use Carthage as a dependency manager and the following libraries are used to support:
 
 3rd Party Libs
-*FsCalendar
+* FsCalendar
 
 Tests
 * Quick
