@@ -1,0 +1,30 @@
+  
+fastlane_require 'yaml'
+fastlane_version "2.156.0"
+xcode_version = '10.0.1'
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Run lint on the code"
+  lane :lint do
+    sh "mkdir -p lint_output"
+    sh "touch lint_output/lint_output.json"
+    swiftlint(
+      mode: :lint,
+      output_file: "fastlane/lint_output/lint_output.json"
+    )
+    sh "cat lint_output/lint_output.json"
+  end
+
+  desc "Run all Unit Tests"
+  lane :test do
+    scan(scheme: "RyanairChallengeTests")
+  end
+
+  desc "Run all UI Tests"
+  lane :ui_test do
+    scan(scheme: "RyanairChallengeUITests", reset_simulator: true, disable_concurrent_testing: true)
+  end
+end

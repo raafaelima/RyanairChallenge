@@ -1,0 +1,174 @@
+{
+  "termsOfUse": "https://www.ryanair.com/ie/en/corporate/terms-of-use=AGREED",
+  "currency": "EUR",
+  "currPrecision": 2,
+  "routeGroup": "DOMESTIC",
+  "tripType": "OTHER",
+  "upgradeType": "PLUS",
+  "trips": [
+    {
+      "origin": "OPO",
+      "originName": "Porto",
+      "destination": "BCN",
+      "destinationName": "Barcelona ",
+      "routeGroup": "DOMESTIC",
+      "tripType": "OTHER",
+      "upgradeType": "PLUS",
+      "dates": [
+        {
+          "dateOut": "2020-08-17T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": -1,
+              "flightKey": "FR~4584~ ~~OPO~08/17/2020 06:25~BCN~08/17/2020 09:15~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "VCZGFX7MQO7QOBUQOZYNBQF4LVVSZ7NAOXYB7RBFBRB6NEFE4YHPAHDBTHBX2WKQJG225IZFEWFDD3M3S7BBIXF7KH45BH3MZIMR2VX5T57DGIMBQNKKDI7SK2OON326L4ORZCARZOWPCKBBLHGXGRK62DWIOIKKHK65R2Q3XBU6HZZN5O6Q",
+                "fareClass": "E",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 98.9900,
+                    "count": 1,
+                    "hasDiscount": false,
+                    "publishedFare": 98.9900,
+                    "discountInPercent": 0,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 0.0
+                  }
+                ]
+              },
+              "operatedBy": "",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "OPO",
+                  "destination": "BCN",
+                  "flightNumber": "FR 4584",
+                  "time": [
+                    "2020-08-17T06:25:00.000",
+                    "2020-08-17T09:15:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-08-17T05:25:00.000Z",
+                    "2020-08-17T07:15:00.000Z"
+                  ],
+                  "duration": "01:50"
+                }
+              ],
+              "flightNumber": "FR 4584",
+              "time": [
+                "2020-08-17T06:25:00.000",
+                "2020-08-17T09:15:00.000"
+              ],
+              "timeUTC": [
+                "2020-08-17T05:25:00.000Z",
+                "2020-08-17T07:15:00.000Z"
+              ],
+              "duration": "01:50"
+            },
+            {
+              "faresLeft": -1,
+              "flightKey": "FR~4546~ ~~OPO~08/17/2020 15:45~BCN~08/17/2020 18:35~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "VCZGFX7MQO7QOBUQOZYNBQF4LVVSZ7NAOXYB7RBFBRB6NEFE4YHIGD5DTNAUFX7L2NFFIQBQDFYRJHKR3LSQGDRERBI7MF5LABTJNOVLIYL5RXDVMZJ4TJJQRDERV6JMYH4KXYZMPRMCWEMFL2DIJO44KUK5GPDCOE6ZMOKCQCGVQVHOGBLA",
+                "fareClass": "E",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 98.9900,
+                    "count": 1,
+                    "hasDiscount": false,
+                    "publishedFare": 98.9900,
+                    "discountInPercent": 0,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 0.0
+                  }
+                ]
+              },
+              "operatedBy": "",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "OPO",
+                  "destination": "BCN",
+                  "flightNumber": "FR 4546",
+                  "time": [
+                    "2020-08-17T15:45:00.000",
+                    "2020-08-17T18:35:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-08-17T14:45:00.000Z",
+                    "2020-08-17T16:35:00.000Z"
+                  ],
+                  "duration": "01:50"
+                }
+              ],
+              "flightNumber": "FR 4546",
+              "time": [
+                "2020-08-17T15:45:00.000",
+                "2020-08-17T18:35:00.000"
+              ],
+              "timeUTC": [
+                "2020-08-17T14:45:00.000Z",
+                "2020-08-17T16:35:00.000Z"
+              ],
+              "duration": "01:50"
+            },
+            {
+              "faresLeft": -1,
+              "flightKey": "FR~4586~ ~~OPO~08/17/2020 19:00~BCN~08/17/2020 21:50~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "VCZGFX7MQO7QOBUQOZYNBQF4LVVSZ7NAOXYB7RBFBRB6NEFE4YHD5J7JAXSHWE3L22M5EMLVO7DZ7Z6QFTCVKUW75MOPF2UX46T6CMZTOXBL2OFPEP6XKX7K7WGF4VNMAMMU7AOFNDM2YSAIBP7CLHVFWSJOPEA6V64P3DG43OBRCEOEZ5DA",
+                "fareClass": "E",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 98.9900,
+                    "count": 1,
+                    "hasDiscount": false,
+                    "publishedFare": 98.9900,
+                    "discountInPercent": 0,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 0.0
+                  }
+                ]
+              },
+              "operatedBy": "",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "OPO",
+                  "destination": "BCN",
+                  "flightNumber": "FR 4586",
+                  "time": [
+                    "2020-08-17T19:00:00.000",
+                    "2020-08-17T21:50:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-08-17T18:00:00.000Z",
+                    "2020-08-17T19:50:00.000Z"
+                  ],
+                  "duration": "01:50"
+                }
+              ],
+              "flightNumber": "FR 4586",
+              "time": [
+                "2020-08-17T19:00:00.000",
+                "2020-08-17T21:50:00.000"
+              ],
+              "timeUTC": [
+                "2020-08-17T18:00:00.000Z",
+                "2020-08-17T19:50:00.000Z"
+              ],
+              "duration": "01:50"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverTimeUTC": "2020-08-16T18:05:40.873Z"
+}

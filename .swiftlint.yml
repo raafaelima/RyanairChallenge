@@ -1,0 +1,41 @@
+disabled_rules: # rule identifiers to exclude from running
+  - variable_name
+  - missing_docs
+  - force_try
+  - force_cast
+  - trailing_comma
+opt_in_rules: # some rules are only opt-in
+  - closing_brace
+  - opening_brace
+  - return_arrow_whitespace
+  - trailing_semicolon
+  - statement_position
+  - empty_count
+  - conditional_returns_on_newline
+  - redundant_nil_coalesing
+  # Find all the available rules by running:
+  # swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - build
+  - Frameworks
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+trailing_semicolon: error
+empty_count: error
+closing_brace: error
+opening_brace: error
+return_arrow_whitespace: error
+colon: error
+comma: error
+
+line_length: 1000
+function_body_length: 180
+function_parameter_count: 10
+type_body_length: 500
+file_length: 500
+
+reporter: "json" # reporter type (xcode, json, csv, checkstyle)

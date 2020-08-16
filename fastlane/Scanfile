@@ -1,0 +1,5 @@
+clean true
+code_coverage true
+skip_build true
+skip_slack true
+device "iPhone 11"
